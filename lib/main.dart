@@ -9,6 +9,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Startup Name Generator',
       home: RandomWords(),
+      theme: ThemeData(
+        primaryColor: Colors.white,
+      ),
     );
   }
 }
@@ -46,7 +49,7 @@ class RandomWordsState extends State<RandomWords> {
         );
       });
       final List<Widget> divided =
-          ListTile.divideTiles(context: context, tiles: tiles,color: Colors.red).toList();
+          ListTile.divideTiles(context: context, tiles: tiles,color: Colors.blue).toList();
           return Scaffold(
             appBar: AppBar(
               title: Text('Saved Suggestions'),              
